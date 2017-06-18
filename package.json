@@ -1,0 +1,44 @@
+{
+  "name": "filpos",
+  "version": "0.0.0",
+  "description": "Fill array like a pad right.",
+  "main": "filpos.js",
+  "support": "filpos.support.js",
+  "deploy": "filpos.deploy.js",
+  "browser": "filpos.deploy.js",
+  "scripts": {
+    "build": "babel filpos.js --out-file filpos.support.js --source-maps && webpack --progress --display-modules",
+    "test": "mocha filpos-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovasystems/filpos.git"
+  },
+  "keywords": [
+    "fill",
+    "array",
+    "pad",
+    "right",
+    "filpos"
+  ],
+  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volkovasystems/filpos/issues"
+  },
+  "homepage": "https://github.com/volkovasystems/filpos#readme",
+  "dependencies": {
+    "babel-runtime": "^6.23.0",
+    "doubt": "^0.27.0",
+    "falzy": "^0.20.0",
+    "protype": "^0.22.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-latest": "^6.24.1",
+    "source-map-loader": "^0.2.1",
+    "webpack": "^2.6.1"
+  }
+}

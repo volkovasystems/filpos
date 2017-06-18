@@ -1,0 +1,31 @@
+{
+  "name": "filpos",
+  "version": "0.0.0",
+  "description": "Fill array like a pad right.",
+  "main": "filpos.deploy.js",
+  "support": "filpos.support.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "fill",
+    "array",
+    "pad",
+    "right",
+    "filpos"
+  ],
+  "homepage": "https://github.com/volkovasystems/filpos",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "doubt": "^0.27.0",
+    "falzy": "^0.20.0",
+    "protype": "^0.22.0"
+  }
+}
