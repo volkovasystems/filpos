@@ -1,8 +1,29 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<script
-			type="application/javascript"
-			src="./filpos.deploy.js">
-		</script>
+		<title>filpos unit test</title>
+
+		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+
+		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
+
+		<script type="application/javascript" src="./filpos.deploy.js"></script>
 	</head>
+
+	<body>
+		<div id="qunit"></div>
+
+		<div id="qunit-fixture"></div>
+
+		<script type="application/javascript">
+			QUnit.test( "filpos unit test", function( assert ) {
+
+				let array = [ 1, 2 ];
+				assert.equal( filpos( array, 5, 0 ), array, "should be equal" );
+
+				assert.deepEqual( filpos( array, 5, 0 ), [ 1, 2, 0, 0, 0 ], "should be deeply equal" );
+				
+			} );
+		</script>
+	</body>
 </html>
