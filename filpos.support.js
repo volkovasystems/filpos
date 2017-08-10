@@ -53,14 +53,12 @@
               		{
               			"doubt": "doubt",
               			"falzy": "falzy",
-              			"protype": "protype"
               		}
               	@end-include
               */
 
 var doubt = require("doubt");
 var falzy = require("falzy");
-var protype = require("protype");
 
 var filpos = function filpos(array, length, defer) {
 	/*;
@@ -77,7 +75,7 @@ var filpos = function filpos(array, length, defer) {
 		throw new Error("invalid array");
 	}
 
-	if (falzy(length) || !protype(length, NUMBER) || length < 1) {
+	if (falzy(length) || typeof length != "number" || length < 1) {
 		throw new Error("invalid length");
 	}
 
