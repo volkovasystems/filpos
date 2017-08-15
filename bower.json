@@ -1,32 +1,28 @@
 {
-  "name": "filpos",
-  "version": "0.2.0",
-  "description": "Fill array like a pad right.",
-  "main": "filpos.deploy.js",
-  "support": "filpos.support.js",
-  "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "keywords": [
-    "fill",
-    "array",
-    "pad",
-    "right",
-    "filpos"
-  ],
-  "homepage": "https://github.com/volkovasystems/filpos",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "doubt": "^0.34.0",
-    "falzy": "^0.23.0"
-  }
+	"name": "filpos",
+	"version": "0.2.0",
+	"description": "Fill array like a pad right.",
+	"main": "filpos.deploy.js",
+	"support": "filpos.support.js",
+	"authors": [
+		"Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"keywords": [
+		"fill",
+		"array",
+		"pad",
+		"right",
+		"filpos"
+	],
+	"homepage": "https://github.com/volkovasystems/filpos",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
 }
