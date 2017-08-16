@@ -66,6 +66,15 @@ const filpos = require( "./filpos.js" );
 
 describe( "filpos", ( ) => {
 
+	describe( "`filpos( [ 1, 2 ], 5, 0 )`", ( ) => {
+		it( "should be equal to [ 1, 2, 0, 0, 0 ]", ( ) => {
+
+			let array = [ 1, 2 ];
+			assert.deepEqual( filpos( array, 5, 0 ), [ 1, 2, 0, 0, 0 ] );
+
+		} );
+	} );
+
 } );
 
 //: @end-server

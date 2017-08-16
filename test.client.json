@@ -1,0 +1,84 @@
+{
+	"state": {
+		"passed": 1,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-16T03:55:03.310Z",
+	"end": "2017-08-16T03:55:39.718Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "filpos",
+			"duration": 0,
+			"start": "2017-08-16T03:55:39.439Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "filpos",
+			"duration": 98,
+			"start": "2017-08-16T03:55:39.439Z",
+			"end": "2017-08-16T03:55:39.537Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-16T03:55:39.441Z",
+					"end": "2017-08-16T03:55:39.441Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "filpos",
+					"associatedTest": "should be equal to [ 1, 2 ]"
+				},
+				{
+					"start": "2017-08-16T03:55:39.536Z",
+					"end": "2017-08-16T03:55:39.536Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "filpos",
+					"associatedTest": "should be equal to [ 1, 2 ]"
+				},
+				{
+					"start": "2017-08-16T03:55:39.537Z",
+					"end": "2017-08-16T03:55:39.537Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "filpos"
+				}
+			]
+		},
+		{
+			"name": "`filpos( [ 1, 2 ], 5, 0 )`",
+			"duration": 97,
+			"start": "2017-08-16T03:55:39.440Z",
+			"end": "2017-08-16T03:55:39.537Z",
+			"tests": [
+				{
+					"name": "should be equal to [ 1, 2 ]",
+					"start": "2017-08-16T03:55:39.440Z",
+					"end": "2017-08-16T03:55:39.535Z",
+					"duration": 95,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}

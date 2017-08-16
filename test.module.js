@@ -70,6 +70,15 @@ const path = require( "path" );
 
 describe( "filpos", ( ) => {
 
+	describe( "`filpos( [ 1, 2 ], 5, 0 )`", ( ) => {
+		it( "should be equal to [ 1, 2, 0, 0, 0 ]", ( ) => {
+
+			let array = [ 1, 2 ];
+			assert.deepEqual( filpos( array, 5, 0 ), [ 1, 2, 0, 0, 0 ] );
+
+		} );
+	} );
+
 } );
 
 //: @end-server
@@ -78,6 +87,16 @@ describe( "filpos", ( ) => {
 //: @client:
 
 describe( "filpos", ( ) => {
+
+	describe( "`filpos( [ 1, 2 ], 5, 0 )`", ( ) => {
+		it( "should be equal to [ 1, 2, 0, 0, 0 ]", ( ) => {
+
+			let array = [ 1, 2 ];
+			assert.deepEqual( filpos( array, 5, 0 ), [ 1, 2, 0, 0, 0 ] );
+
+		} );
+	} );
+
 } );
 
 //: @end-client
@@ -86,6 +105,26 @@ describe( "filpos", ( ) => {
 //: @bridge:
 
 describe( "filpos", ( ) => {
+
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
+	describe( "`filpos( [ 1, 2 ], 5, 0 )`", ( ) => {
+		it( "should be equal to [ 1, 2 ]", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let array = [ 1, 2 ];
+					return filpos( array, 5, 0 );
+				}
+
+			).value;
+
+			assert.deepEqual( result, [ 1, 2, 0, 0, 0 ] );
+
+		} );
+	} );
+
 } );
 
 //: @end-bridge

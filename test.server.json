@@ -1,16 +1,32 @@
 {
-  "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-08-15T03:20:47.448Z",
-    "end": "2017-08-15T03:20:47.448Z",
-    "duration": 0
-  },
-  "tests": [],
-  "pending": [],
-  "failures": [],
-  "passes": []
+	"stats": {
+		"suites": 2,
+		"tests": 1,
+		"passes": 1,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-16T03:55:00.984Z",
+		"end": "2017-08-16T03:55:00.991Z",
+		"duration": 7
+	},
+	"tests": [
+		{
+			"title": "should be equal to [ 1, 2, 0, 0, 0 ]",
+			"fullTitle": "filpos `filpos( [ 1, 2 ], 5, 0 )` should be equal to [ 1, 2, 0, 0, 0 ]",
+			"duration": 2,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should be equal to [ 1, 2, 0, 0, 0 ]",
+			"fullTitle": "filpos `filpos( [ 1, 2 ], 5, 0 )` should be equal to [ 1, 2, 0, 0, 0 ]",
+			"duration": 2,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }
