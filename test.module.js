@@ -101,30 +101,28 @@ describe( "filpos", ( ) => {
 
 //: @end-client
 
-
 //: @bridge:
-
 describe( "filpos", ( ) => {
 
 	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
 
 	describe( "`filpos( [ 1, 2 ], 5, 0 )`", ( ) => {
 		it( "should be equal to [ 1, 2, 0, 0, 0 ]", ( ) => {
-
+			//: @ignore:
 			let result = browser.url( bridgeURL ).execute(
 
 				function( ){
 					let array = [ 1, 2 ];
-					return filpos( array, 5, 0 );
+					return JSON.stringify( filpos( array, 5, 0 ) );
 				}
 
 			).value;
+			//: @end-ignore
 
-			assert.deepEqual( result, [ 1, 2, 0, 0, 0 ] );
+			assert.deepEqual( JSON.parse( result ), [ 1, 2, 0, 0, 0 ] );
 
 		} );
 	} );
 
 } );
-
 //: @end-bridge
