@@ -109,7 +109,7 @@ describe( "filpos", ( ) => {
 	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
 
 	describe( "`filpos( [ 1, 2 ], 5, 0 )`", ( ) => {
-		it( "should be equal to [ 1, 2 ]", ( ) => {
+		it( "should be equal to [ 1, 2, 0, 0, 0 ]", ( ) => {
 
 			let result = browser.url( bridgeURL ).execute(
 
