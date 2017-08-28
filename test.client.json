@@ -4,8 +4,8 @@
 		"failed": 0,
 		"skipped": 0
 	},
-	"start": "2017-08-16T04:27:08.827Z",
-	"end": "2017-08-16T04:27:53.191Z",
+	"start": "2017-08-28T08:35:23.563Z",
+	"end": "2017-08-28T08:36:03.723Z",
 	"capabilities": {
 		"browserName": "chrome",
 		"chromeOptions": {
@@ -28,36 +28,36 @@
 		{
 			"name": "filpos",
 			"duration": 0,
-			"start": "2017-08-16T04:27:52.905Z",
+			"start": "2017-08-28T08:36:03.436Z",
 			"tests": [],
 			"hooks": []
 		},
 		{
 			"name": "filpos",
-			"duration": 101,
-			"start": "2017-08-16T04:27:52.905Z",
-			"end": "2017-08-16T04:27:53.006Z",
+			"duration": 105,
+			"start": "2017-08-28T08:36:03.436Z",
+			"end": "2017-08-28T08:36:03.541Z",
 			"tests": [],
 			"hooks": [
 				{
-					"start": "2017-08-16T04:27:52.907Z",
-					"end": "2017-08-16T04:27:52.908Z",
-					"duration": 1,
+					"start": "2017-08-28T08:36:03.438Z",
+					"end": "2017-08-28T08:36:03.438Z",
+					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "filpos",
 					"associatedTest": "should be equal to [ 1, 2, 0, 0, 0 ]"
 				},
 				{
-					"start": "2017-08-16T04:27:53.005Z",
-					"end": "2017-08-16T04:27:53.006Z",
-					"duration": 1,
+					"start": "2017-08-28T08:36:03.540Z",
+					"end": "2017-08-28T08:36:03.540Z",
+					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "filpos",
 					"associatedTest": "should be equal to [ 1, 2, 0, 0, 0 ]"
 				},
 				{
-					"start": "2017-08-16T04:27:53.007Z",
-					"end": "2017-08-16T04:27:53.007Z",
+					"start": "2017-08-28T08:36:03.541Z",
+					"end": "2017-08-28T08:36:03.541Z",
 					"duration": 0,
 					"title": "\"after all\" hook",
 					"associatedSuite": "filpos"
@@ -66,15 +66,15 @@
 		},
 		{
 			"name": "`filpos( [ 1, 2 ], 5, 0 )`",
-			"duration": 100,
-			"start": "2017-08-16T04:27:52.906Z",
-			"end": "2017-08-16T04:27:53.006Z",
+			"duration": 104,
+			"start": "2017-08-28T08:36:03.437Z",
+			"end": "2017-08-28T08:36:03.541Z",
 			"tests": [
 				{
 					"name": "should be equal to [ 1, 2, 0, 0, 0 ]",
-					"start": "2017-08-16T04:27:52.907Z",
-					"end": "2017-08-16T04:27:53.005Z",
-					"duration": 98,
+					"start": "2017-08-28T08:36:03.437Z",
+					"end": "2017-08-28T08:36:03.540Z",
+					"duration": 103,
 					"state": "pass"
 				}
 			],

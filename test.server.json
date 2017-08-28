@@ -5,15 +5,15 @@
 		"passes": 1,
 		"pending": 0,
 		"failures": 0,
-		"start": "2017-08-16T04:27:07.616Z",
-		"end": "2017-08-16T04:27:07.624Z",
-		"duration": 8
+		"start": "2017-08-28T08:35:22.419Z",
+		"end": "2017-08-28T08:35:22.425Z",
+		"duration": 6
 	},
 	"tests": [
 		{
 			"title": "should be equal to [ 1, 2, 0, 0, 0 ]",
 			"fullTitle": "filpos `filpos( [ 1, 2 ], 5, 0 )` should be equal to [ 1, 2, 0, 0, 0 ]",
-			"duration": 3,
+			"duration": 2,
 			"currentRetry": 0,
 			"err": {}
 		}
@@ -24,7 +24,7 @@
 		{
 			"title": "should be equal to [ 1, 2, 0, 0, 0 ]",
 			"fullTitle": "filpos `filpos( [ 1, 2 ], 5, 0 )` should be equal to [ 1, 2, 0, 0, 0 ]",
-			"duration": 3,
+			"duration": 2,
 			"currentRetry": 0,
 			"err": {}
 		}
